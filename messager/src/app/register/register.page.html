@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-input required type="text" placeholder="Firstname" [(ngModel)]="musterUser.firstName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="text" placeholder="Lastname" [(ngModel)]="musterUser.lastName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="email" placeholder="Email" [(ngModel)]="musterUser.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="text" placeholder="Password" [(ngModel)]="musterUser.password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-footer spot="buttom">
+  <ion-button vertical="full" expand="full" (click)="saveUser()">Save</ion-button>
+</ion-footer>
+</ion-content>

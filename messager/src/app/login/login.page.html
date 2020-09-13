@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="login">
+    <ion-row>
+
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item lines="full">
+          <ion-label color="primary">Username:</ion-label>
+          <ion-input required type="text"  placeholeder="Username" [(ngModel)]="user.username"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item lines="full">
+          <ion-label color="primary">Password:</ion-label>
+          <ion-input required type="password"  placeholeder="Password" [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  
+    <ion-button expand="block" (click)="loginUser();">Login</ion-button>
+
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer>
+  <ion-grid>
+    <ion-row class="ion-aling-items-center">
+      <ion-col size="12" class="ion-text-center">
+        <p style="font-size:x-small;">If you don't register started it now and sign in for free.</p>
+        <ion-button>Register</ion-button>
+      </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-footer>

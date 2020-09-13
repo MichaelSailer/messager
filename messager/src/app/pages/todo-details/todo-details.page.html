@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Details</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list lines="full">
+      <ion-item>
+        <ion-input required type="text" placeholder="Task" [(ngModel)]="todo.task"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input required type="number" placeholder="Task" [(ngModel)]="todo.priority"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button vertical="buttom" expand="full" (click)="saveTodo()">Save</ion-button>
+
+</ion-content>
